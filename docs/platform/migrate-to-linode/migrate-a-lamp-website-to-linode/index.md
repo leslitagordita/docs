@@ -77,11 +77,11 @@ If any new information is added to the database on the current host prior to ful
 
 ### Transfer Data to Linode
 
-The following commands will copy files into the home directory of your Linode's Linux user. The next section will ensure that these files are moved to the right locations on disk and that their file owneship is correct. This work is done in two steps because the Linux user is assumed to have limited privileges and is unable to write to certain locations on disk.
+The following commands will copy files into the home directory of your Linode's Linux user. The next section will ensure that these files are moved to the right locations on disk and that their file ownership is correct. This work is done in two steps because the Linux user is assumed to have limited privileges and is unable to write to certain locations on disk.
 
 1.  From your current host, upload the Apache configuration files to your new Linode:
 
-        rsync -az /etc/apache2/apache2.conf linode_user@linode_ip_address:/etc/apache2/
+        rsync -az /etc/apache2/apache2.conf linode_user@linode_ip_address:~
         rsync -az /etc/apache2/sites-available/example.com.conf linode_user@linode_ip_address:~
 
 1.  Upload your website files to your Linode:
@@ -94,7 +94,7 @@ The following commands will copy files into the home directory of your Linode's 
 
 ### Finish Setting Up Your Linode
 
-1.  From your Linode, move the transferred Apache configuration files to the appropriate locations:
+1.  From your Linode, move the transferred Apache configuration files to the appropriate locations, if they are not already there:
 
         cd ~
         sudo mv apache2.conf /etc/apache2
@@ -128,11 +128,11 @@ It is not necessary to supply the `-p` password option when restoring the backup
 1.  Disable the default Apache example site and enable yours:
 
         sudo a2dissite 000-default.conf
-        sudo ensite example.com.conf
+        sudo a2ensite example.com.conf
 
 1.  Restart Apache:
 
-        sudo systemctl restart apache
+        sudo systemctl restart apache2
 
 ### Test Your New Environment
 
