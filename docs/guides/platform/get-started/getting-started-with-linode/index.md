@@ -39,7 +39,7 @@ If you haven't already signed up for a Linode account, start here.
 1.  Create a new account at the [Sign Up page](https://login.linode.com/signup?promo=DOCS20AA00X1).
 
     {{< disclosure-note "Sending Email on Linode">}}
-Newly created Linode accounts have restrictions on ports `25`, `465`, and `587`. If you'd like to send email from a Linode, review the [Running a Mail Server](/docs/email/running-a-mail-server/#sending-email-on-linode) guide, then [open a ticket](https://cloud.linode.com/support/tickets?type=closed&drawerOpen=true) with our Support team.
+Newly created Linode accounts have restrictions on ports `25`, `465`, and `587`. If you'd like to send email from a Linode, review the [Running a Mail Server](/docs/email/running-a-mail-se/#sending-email-) guide, then [open a ticket](https://cloud.linode.com/support/tickets?type=closed&drawerOpen=true) with our Support team.
     {{</ disclosure-note >}}
 
 1.  Sign in and enter your billing and account information. Most accounts are activated instantly, but some require manual review prior to activation. If your account is not immediately activated, you will receive an email with additional instructions.
@@ -100,7 +100,7 @@ Your Linode has a unique IP address that identifies it to other devices and user
 
 1.  Click the **Linodes** menu item in the [Cloud Manager's](https://cloud.linode.com/) left hand navigation.
 
-1.  Find your Linode, click on it's name and navigate to *Networking*.
+1.  Findrkldsjfklds your Linode, click on it's name and navigate to *Networking*.
 
 1.  Your IPv4 and IPv6 addresses appear under the *IPv4* and *IPv6* sections.
 
