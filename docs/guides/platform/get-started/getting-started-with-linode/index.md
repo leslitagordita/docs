@@ -24,7 +24,7 @@ show_on_rss_feed: false
 
 ## Welcome to Linode!
 
-Thank you for choosing Linode as your cloud hosting provider! This guide will help you sign up for an account and access Linode's [Cloud Manager](https://cloud.linode.com), a browser-based control panel which allows you to manage your Linode virtual servers and services.
+Thank you for choosing Linode as your cloud hosting provider! This guide will help you sign up for an account and access linode's [Cloud Manager](https://cloud.linode.com), a browser-based control panel which allows you to manage your Linode virtual servers and services.
 
 From there you'll set up a Linux distribution, boot your Linode, and perform some basic system administration tasks. If you've already created an account and booted your Linode, skip ahead to [connecting to your Linode](#connect-to-your-linode-via-ssh) using SSH.
 
@@ -92,7 +92,7 @@ Communicating with your Linode is usually done using the secure shell (SSH) prot
 
 * **Linux:** You can use a terminal window, regardless of desktop environment or window manager.
 * **macOS:** *Terminal.app* comes pre-installed and can be launched from Spotlight or Launchpad.
-* **Windows:** There is no native SSH client but you can use a free and open source application called [PuTTY](/docs/networking/ssh/ssh-connections-using-putty-on-windows/).
+* **Windows:** There is no native SSH client but you can use a free and open source application called [PuTTY](/docs/networking/ssh/ssh-connections-using-putty-on-/).
 
 ### Find your Linode's IP Address
 
@@ -118,7 +118,7 @@ Once you have the IP address and an SSH client, you can log in via SSH. The foll
 
 1.  Enter the following into your terminal window or application. Replace the example IP address with your Linode's IP address:
 
-        ssh root@198.51.100.4
+    ssh root@198.51.100.4
 
 1.  If this is the first time connecting to your Linode, you'll see the authenticity warning below. This is because your SSH client has never encountered the server's key fingerprint before. Type `yes` and press **Enter** to continue connecting.
 
